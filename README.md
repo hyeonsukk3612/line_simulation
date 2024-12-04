@@ -19,3 +19,12 @@ https://github.com/user-attachments/assets/995ea673-557a-46b4-a09f-090cd0f36335
 처리된 영상은 두 개의 별도 스트림으로 전송되며, 하나는 원본 프레임을, 다른 하나는 처리된 이미지를 보여줍니다. 
 
 프로그램은 Ctrl+C 신호를 받을 때까지 계속 실행되며, 실행 중 각 프레임 처리에 걸린 시간과 설정된 모터 속도를 출력합니다
+
+7번영상
+
+https://github.com/user-attachments/assets/64889b39-101a-4a4d-84d7-7f00f54c1031
+
+5번영상
+
+https://github.com/user-attachments/assets/ba0fa230-c5e9-4c4e-91b4-eba43ad39cba
+
