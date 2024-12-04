@@ -73,12 +73,12 @@ int main() {
         // 연결 요소 분석 및 가장 가까운 객체 찾기
         for (int i = 1; i < num; i++) {
             int area = stats.at<int>(i, CC_STAT_AREA);
-            if (area > 120) {
+            if (area > 90) {
                 Point center(cvRound(centroids.at<double>(i, 0)), cvRound(centroids.at<double>(i, 1)));
                 Rect object(stats.at<int>(i, CC_STAT_LEFT), stats.at<int>(i, CC_STAT_TOP),
                             stats.at<int>(i, CC_STAT_WIDTH), stats.at<int>(i, CC_STAT_HEIGHT));
                 int dist = norm(center - mainPoint);
-                if (dist <= 140 && dist < minDist) {
+                if (dist <= 100 && dist < minDist) {
                     minDist = dist;
                     closestIndex = i;
                 }
