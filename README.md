@@ -44,12 +44,12 @@ https://github.com/user-attachments/assets/eb4ca89e-1e87-483f-b021-54291e95b321
         // 연결 요소 분석 및 가장 가까운 객체 찾기
         for (int i = 1; i < num; i++) {
             int area = stats.at<int>(i, CC_STAT_AREA);
-            if (area > 90) {
+            if (area > 100) {
                 Point center(cvRound(centroids.at<double>(i, 0)), cvRound(centroids.at<double>(i, 1)));
                 Rect object(stats.at<int>(i, CC_STAT_LEFT), stats.at<int>(i, CC_STAT_TOP),
                             stats.at<int>(i, CC_STAT_WIDTH), stats.at<int>(i, CC_STAT_HEIGHT));
                 int dist = norm(center - mainPoint);
-                if (dist <= 100 && dist < minDist) {
+                if (dist <= 80 && dist < minDist) {
                     minDist = dist;
                     closestIndex = i;
                 }
