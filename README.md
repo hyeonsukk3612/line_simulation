@@ -1,6 +1,6 @@
 https://www.youtube.com/@newgull7736 혹시 동영상 오류시에는 유튜브 채널에서 찾아 보시면 되겠습니다!
 
-리눅스를 통한 카메라 화면 영상
+초기코드를 이용한 리눅스를 통한 카메라 화면 영상
 
 https://github.com/user-attachments/assets/995ea673-557a-46b4-a09f-090cd0f36335
 
