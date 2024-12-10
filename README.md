@@ -40,3 +40,39 @@ https://github.com/user-attachments/assets/eb4ca89e-1e87-483f-b021-54291e95b321
 
 
 
+
+        // 연결 요소 분석 및 가장 가까운 객체 찾기
+        for (int i = 1; i < num; i++) {
+            int area = stats.at<int>(i, CC_STAT_AREA);
+            if (area > 90) {
+                Point center(cvRound(centroids.at<double>(i, 0)), cvRound(centroids.at<double>(i, 1)));
+                Rect object(stats.at<int>(i, CC_STAT_LEFT), stats.at<int>(i, CC_STAT_TOP),
+                            stats.at<int>(i, CC_STAT_WIDTH), stats.at<int>(i, CC_STAT_HEIGHT));
+                int dist = norm(center - mainPoint);
+                if (dist <= 100 && dist < minDist) {
+                    minDist = dist;
+                    closestIndex = i;
+                }
+                
+                rectangle(output, object, Scalar(255, 0, 0), 2);  // 모든 객체 파란색으로 표시
+                circle(output, center, 5, Scalar(255, 0, 0), -1);
+            }
+        }
+90크기 보다 큰 값을 안지하여 가운데 부분을 레이블링하여 파랑색으로 표시합니다. 그중에 100이하이고 픽셀보다 큰 값을 제외하여 제일 가까운 값을 저장합니다.
+
+
+        // 가장 가까운 객체 처리
+        if (closestIndex >= 0) {
+            Rect object(stats.at<int>(closestIndex, CC_STAT_LEFT), stats.at<int>(closestIndex, CC_STAT_TOP),
+                        stats.at<int>(closestIndex, CC_STAT_WIDTH), stats.at<int>(closestIndex, CC_STAT_HEIGHT));
+            Point center(cvRound(centroids.at<double>(closestIndex, 0)), cvRound(centroids.at<double>(closestIndex, 1)));
+            
+            rectangle(output, object, Scalar(0, 0, 255), 2);  // 가장 가까운 객체 빨간색으로 표시
+            circle(output, center, 5, Scalar(0, 0, 255), -1);
+            mainPoint = center;
+            lastPosition = center;
+        }
+
+closestIndex값을 인지하면 가장 가까운 값을 위에서 받을 걸 기준으로 하여 빨강색으로 표시하고 그부분을 빨강색 레이블링 박스를 만들어 표시하고 박스의 중심점을 빨간색으로 표시합니다.
+
+
