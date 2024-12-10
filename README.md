@@ -76,3 +76,4 @@ https://github.com/user-attachments/assets/eb4ca89e-1e87-483f-b021-54291e95b321
 closestIndex값을 인지하면 가장 가까운 값을 위에서 받을 걸 기준으로 하여 빨강색으로 표시하고 그부분을 빨강색 레이블링 박스를 만들어 표시하고 박스의 중심점을 빨간색으로 표시합니다.
 
 
+
