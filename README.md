@@ -89,8 +89,3 @@ closestIndex값을 인지하면 가장 가까운 값을 위에서 받을 걸 기
 실제 바깥쪽 코스 도는 영상입니다!
 
 [https://www.youtube.com/shorts/5SGmwgLo_hM](https://www.youtube.com/watch?v=35W5Sj6jz48)
-
-
-실제 안쪽 코스 도는 영상입니다!
-
-https://www.youtube.com/watch?v=mR286u5YYfY
