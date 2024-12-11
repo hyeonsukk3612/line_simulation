@@ -85,3 +85,12 @@ closestIndex값을 인지하면 가장 가까운 값을 위에서 받을 걸 기
 객체 추적과 모터 제어를 결합하여 자율 주행 로봇이나 객체 추적 시스템의 기본 프레임워크를 제공합니다. 
 
 'ctrl_c_pressed' 변수를 통해 프로그램의 안전한 종료를 보장하며, 루프 내에서 'usleep' 함수로 실행 주기를 조절합니다. 
+
+실제 바깥쪽 코스 도는 영상입니다!
+
+[https://www.youtube.com/shorts/5SGmwgLo_hM](https://www.youtube.com/watch?v=35W5Sj6jz48)
+
+
+실제 안쪽 코스 도는 영상입니다!
+
+https://www.youtube.com/watch?v=mR286u5YYfY
